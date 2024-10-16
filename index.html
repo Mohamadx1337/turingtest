@@ -6,8 +6,63 @@
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
     <title>Turing Test</title>
+
+<style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    padding: 20px;
+    font-size: 25px;
+    background-color: #f4f4f4;
+    text-align: center;
+    height: 80vh;
+    background: linear-gradient(45deg, #d2001a, #7462ff, #f48e21, #23d5ab);
+    background-size: 300% 300%;
+    animation: color 12s ease-in-out infinite;
+}
+@keyframes color{
+    0%{
+        background-position: 0 50%;
+    }    
+    50%{
+        background-position: 100% 50%;
+    }   
+    100%{
+        background-position: 0 50%;
+    }   
+}
+h1 {
+    font-family: "Oswald", sans-serif;
+    color: white;
+    border: solid 5px white;
+}
+
+form {
+    margin: 20px 0;
+}
+
+input[type="text"] {
+    padding: 10px;
+    width: 300px;
+    margin-right: 10px;
+}
+
+button {
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 25px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+    
+</style>
+    
 </head>
 <body>
     <h1>Välkommen till Turing-testet</h1>
