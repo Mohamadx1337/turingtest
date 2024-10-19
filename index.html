@@ -140,7 +140,10 @@ function showNextQuestion() {
         const questionElement = document.getElementById("question");
         const responseElement = document.getElementById("response");
         questionElement.innerText = "Tack för att du deltog!";
-        responseElement.innerText = `Du fick ${score} av ${questions.length} rätt! \n\n Sista steger är att svara på enkäten nedan: \n https://docs.google.com/forms/d/1qu3bLUbJtl5zSkb_9_U0ySC-d414Ak2adE8YR4GvePk/edit `;
+        responseElement.innerHTML = `Du fick ${score} av ${questions.length} rätt! <br><br> 
+Sista steget är att svara på enkäten nedan: <br> 
+<a href="https://docs.google.com/forms/d/1qu3bLUbJtl5zSkb_9_U0ySC-d414Ak2adE8YR4GvePk/edit" target="_blank">Google Formulär</a>`;
+
         document.getElementById("options").style.display = "none"; // Dölja svarsalternativ
         // Skicka resultat till servern
         sendResultsToServer();
